@@ -24,8 +24,7 @@
         "dependencies":             ["web"],
         "restartAdapters":          ["vis"],
         "singleton":                true,
-        "type":                     "vis",
-		"highlight":                true
+        "type":                     "vis"
     },
     "native": {
     }
