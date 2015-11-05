@@ -1,0 +1,51 @@
+{
+  "name": "iobroker.vis-google-fonts",
+  "description": "Graphical user interface for ioBroker.",
+  "version": "0.0.1",
+  "author": {
+    "name": "bluefox",
+    "email": "bluefox@ccu.io"
+  },
+  "contributors": [
+    "bluefox <bluefox@ccu.io>"
+  ],
+  "homepage": "https://github.com/ioBroker/ioBroker.vis-google-fonts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ioBroker/ioBroker.vis-google-fonts"
+  },
+  "licenses": [
+    {
+      "type": "OFL-1.1",
+      "url": "https://github.com/ioBroker/ioBroker.vis-google-fonts/blob/master/LICENSE"
+    }
+  ],
+  "keywords": [
+    "ioBroker",
+    "GUI",
+    "DashUI",
+    "web interface",
+    "home automation",
+    "SCADA"
+  ],
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-replace": "^0.9.3",
+    "grunt-contrib-jshint": "^0.11.2",
+    "grunt-jscs": "^2.0.0",
+    "grunt-http": "^1.6.0",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-compress": "^0.13.0",
+    "grunt-contrib-copy": "^0.8.0",
+    "grunt-exec": "^0.4.6"
+  },
+  "bugs": {
+    "url": "https://github.com/ioBroker/ioBroker.vis-google-fonts/issues"
+  },
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "install": "node main.js --install"
+  },
+  "license": "OFL-1.1"
+}
