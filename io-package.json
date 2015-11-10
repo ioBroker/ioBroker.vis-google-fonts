@@ -1,7 +1,7 @@
 {
     "common": {
         "name":                     "vis-google-fonts",
-        "version": "0.0.1",
+        "version": "0.1.0",
         "title":                    "Nice google fonts for ioBroker.vis",
         "desc": {
             "en":                   "Nice google fonts for ioBroker.vis",
@@ -27,5 +27,6 @@
         "type":                     "vis"
     },
     "native": {
+		"always": true
     }
 }
