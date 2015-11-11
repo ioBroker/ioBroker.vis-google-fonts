@@ -6,6 +6,9 @@ Additional fonts fot ioBroker.vis
 
 ## Usage
 Install fonts and use field **CSS->font-family**. 
+![How to use](img/usage.png)
+
+Fonts:
 ![Fonts](img/fonts.png)
 
 Extend iobroker.vis with google fonts: https://www.google.com/fonts 
