@@ -2,3 +2,6 @@ Gruntfile.js
 tasks
 ablage.html
 node_modules
+test
+.travis.yml
+appveyor.yml
