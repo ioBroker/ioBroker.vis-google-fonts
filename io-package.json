@@ -1,32 +1,41 @@
 {
     "common": {
-        "name":                     "vis-google-fonts",
+        "name": "vis-google-fonts",
         "version": "1.0.0",
-        "title":                    "Nice google fonts for ioBroker.vis",
+        "title": "Nice google fonts for ioBroker.vis",
         "desc": {
-            "en":                   "Nice google fonts for ioBroker.vis",
-            "de":                   "Schöne google fonts für ioBroker.vis",
-            "ru":                   "Красивые google шрифты для ioBroker.vis"
+            "en": "Nice google fonts for ioBroker.vis",
+            "de": "Schöne google fonts für ioBroker.vis",
+            "ru": "Красивые google шрифты для ioBroker.vis"
         },
-        "platform":                 "Javascript/Node.js",
-        "loglevel":                 "info",
-        "icon":                     "vis-google-fonts.png",
-        "enabled":                  true,
-        "mode":                     "once",
-        "extIcon":                  "https://raw.githubusercontent.com/ioBroker/ioBroker.vis-google-fonts/master/admin/vis-google-fonts.png",
-        "keywords":                 ["iobroker.vis", "GUI", "fonts", "scada"],
-        "readme":                   "https://github.com/ioBroker/ioBroker.vis-google-fonts/blob/master/README.md",
+        "platform": "Javascript/Node.js",
+        "loglevel": "info",
+        "icon": "vis-google-fonts.png",
+        "enabled": true,
+        "mode": "once",
+        "extIcon": "https://raw.githubusercontent.com/ioBroker/ioBroker.vis-google-fonts/master/admin/vis-google-fonts.png",
+        "keywords": [
+            "iobroker.vis",
+            "GUI",
+            "fonts",
+            "scada"
+        ],
+        "readme": "https://github.com/ioBroker/ioBroker.vis-google-fonts/blob/master/README.md",
         "authors": [
             "bluefox <bluefox@ccu.io>"
         ],
-        "localLink":                "%web_protocol%://%ip%:%web_port%/vis/widgets/google-fonts/index.html",
-        "license":                  "OFL-1.1",
-        "dependencies":             ["web"],
-        "restartAdapters":          ["vis"],
-        "singleton":                true,
-        "type":                     "vis"
+        "localLink": "%web_protocol%://%ip%:%web_port%/vis/widgets/google-fonts/index.html",
+        "license": "OFL-1.1",
+        "dependencies": [
+            "web"
+        ],
+        "restartAdapters": [
+            "vis"
+        ],
+        "singleton": true,
+        "type": "visualization-widgets"
     },
     "native": {
-		"always": true
+        "always": true
     }
 }
