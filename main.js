@@ -12,7 +12,7 @@
 "use strict";
 
 var utils     = require(__dirname + '/lib/utils'); // Get common adapter utils
-var adapter   = utils.adapter('vis-google-fonts');
+var adapter   = utils.Adapter('vis-google-fonts');
 var writeFile = require(__dirname + '/lib/install.js');
 
 adapter.on('ready', function () {
