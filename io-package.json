@@ -1,8 +1,8 @@
 {
     "common": {
-        "name": "vis-google-fonts",
+        "name": "vis-google-fonts+star-trek",
         "version": "1.0.0",
-        "title": "Nice google fonts for ioBroker.vis",
+        "title": "Nice google and star trek fonts for ioBroker.vis",
         "desc": {
             "en": "Nice google fonts for ioBroker.vis",
             "de": "Schöne google fonts für ioBroker.vis",
@@ -13,14 +13,14 @@
         "icon": "vis-google-fonts.png",
         "enabled": true,
         "mode": "once",
-        "extIcon": "https://raw.githubusercontent.com/ioBroker/ioBroker.vis-google-fonts/master/admin/vis-google-fonts.png",
+        "extIcon": "https://github.com/Dom110/ioBroker.vis-google-fonts/master/admin/vis-google-fonts.png",
         "keywords": [
             "iobroker.vis",
             "GUI",
             "fonts",
             "scada"
         ],
-        "readme": "https://github.com/ioBroker/ioBroker.vis-google-fonts/blob/master/README.md",
+        "readme": "https://github.com/Dom110/ioBroker.vis-google-fonts/blob/master/README.md",
         "authors": [
             "bluefox <bluefox@ccu.io>"
         ],
