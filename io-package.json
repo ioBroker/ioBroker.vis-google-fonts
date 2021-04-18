@@ -1,6 +1,6 @@
 {
     "common": {
-        "name": "vis-google-fonts+star-trek",
+        "name": "vis-google-fonts-star-trek",
         "version": "1.0.0",
         "title": "Nice google and star trek fonts for ioBroker.vis",
         "desc": {
