@@ -12,7 +12,7 @@
 "use strict";
 
 var utils = require('@iobroker/adapter-core'); // Get common adapter utils
-var adapter   = utils.Adapter('vis-google-fonts');
+var adapter   = utils.Adapter('vis-google-fonts-test');
 var writeFile = require(__dirname + '/lib/install.js');
 
 adapter.on('ready', function () {
