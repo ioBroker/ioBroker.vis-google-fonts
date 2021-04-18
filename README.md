@@ -1,5 +1,8 @@
 ![Logo](admin/vis-google-fonts.png)
 ioBroker.vis-google-fonts
+
+with some Star Trek Fonts
+
 ============
 
 ![Number of Installations](http://iobroker.live/badges/vis-google-fonts-installed.svg) ![Number of Installations](http://iobroker.live/badges/vis-google-fonts-stable.svg) [![NPM version](http://img.shields.io/npm/v/iobroker.vis-google-fonts.svg)](https://www.npmjs.com/package/iobroker.vis-google-fonts)
