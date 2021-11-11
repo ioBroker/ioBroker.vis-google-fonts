@@ -1,9 +1,21 @@
 {
   "common": {
     "name": "vis-google-fonts",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "title": "Nice google fonts for ioBroker.vis",
     "news": {
+      "1.0.3": {
+        "en": "Support of compact mode added",
+        "de": "Unterstützung des Kompaktmodus hinzugefügt",
+        "ru": "Добавлена поддержка компактного режима",
+        "pt": "Suporte para modo compacto adicionado",
+        "nl": "Ondersteuning van compacte modus toegevoegd",
+        "fr": "Prise en charge du mode compact ajoutée",
+        "it": "Aggiunto il supporto della modalità compatta",
+        "es": "Soporte de modo compacto agregado",
+        "pl": "Dodano obsługę trybu kompaktowego",
+        "zh-cn": "添加了对紧凑模式的支持"
+      },
       "1.0.2": {
         "en": "Support of compact mode added",
         "de": "Unterstützung des Kompaktmodus hinzugefügt",
