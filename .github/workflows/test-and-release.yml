@@ -124,9 +124,6 @@ jobs:
       - name: Install Dependencies
         run: npm install --ignore-scripts
 
-      - name: Build
-        run: npm run build
-
 #      - name: Create a clean build
 #        run: npm run build
       - name: Publish package to npm

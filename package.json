@@ -57,6 +57,6 @@
   },
   "license": "OFL-1.1",
   "dependencies": {
-    "@iobroker/adapter-core": "^1.0.3"
+    "@iobroker/adapter-core": "^2.5.1"
   }
 }
