@@ -51,7 +51,7 @@
   ],
   "scripts": {
     "test:package": "mocha test/package --exit",
-    "test:integration": "mocha test/integration --exit",
+    "test": "npm run test:package",
     "install": "node main.js --install",
     "release": "release-script patch --yes",
     "release-minor": "release-script minor --yes"
