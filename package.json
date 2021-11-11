@@ -43,7 +43,7 @@
     "admin/",
     "img/",
     "lib/",
-    "www/",
+    "widgets/",
     "io-package.json",
     "LICENSE",
     "main.js"

@@ -53,7 +53,7 @@ Following fonts will be included:
 -->
 
 ## Changelog
-### 1.0.2 (2021-11-11)
+### __WORK IN PROGRESS__
 * (bluefox) Support of compact mode added
 
 ### 1.0.0 (2016-04-20)
