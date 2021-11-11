@@ -47,16 +47,23 @@ Following fonts will be included:
 - StalinistOne - from Alexey Maslov, Jovanny Lemonad (lemonad@jovanny.ru)
 - Ubuntu - UBUNTU FONT LICENCE Version 1.0 
 
+<!--
+	Placeholder for the next version (at the beginning of the line):
+	### __WORK IN PROGRESS__
+-->
+
 ## Changelog
+### __WORK IN PROGRESS__
+* (bluefox) Support of compact mode added
 
 ### 1.0.0 (2016-04-20)
-- (bluefox) just set the version
+* (bluefox) just set the version
 
 ### 0.1.0 (2015-11-05)
-- (bluefox) always load google-fonts if installed
+* (bluefox) always load google-fonts if installed
 
 ### 0.0.1 (2015-11-05)
-- (bluefox) initial checkin
+* (bluefox) initial checkin
 
 ## License
  Apache 2.0 and SIL Open Font License 1.1

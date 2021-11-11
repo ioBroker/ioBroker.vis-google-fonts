@@ -44,13 +44,12 @@
         ],
         "readme": "https://github.com/ioBroker/ioBroker.vis-google-fonts/blob/master/README.md",
         "authors": [
-            "bluefox <bluefox@ccu.io>"
+            "bluefox <dogafox@gmail.com>"
         ],
         "compact": true,
         "adminUI": {
             "config": "none"
         },
-        "localLink": "%web_protocol%://%ip%:%web_port%/vis/widgets/google-fonts/index.html",
         "license": "OFL-1.1",
         "dependencies": [
             "web"
