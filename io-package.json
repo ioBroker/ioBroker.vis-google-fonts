@@ -3,10 +3,32 @@
         "name": "vis-google-fonts",
         "version": "1.0.0",
         "title": "Nice google fonts for ioBroker.vis",
+        "news": {
+
+        },
+        "titleLang": {
+            "en": "Google fonts for vis",
+            "de": "Google-Schriften für vis",
+            "ru": "Шрифты Google для vis",
+            "pt": "Fontes do Google para vis",
+            "nl": "Google-lettertypen voor vis",
+            "fr": "Polices Google pour vis",
+            "it": "Caratteri di Google per vis",
+            "es": "Fuentes de Google para vis",
+            "pl": "Czcionki Google dla vis",
+            "zh-cn": "vis 的谷歌字体"
+        },
         "desc": {
             "en": "Nice google fonts for ioBroker.vis",
             "de": "Schöne google fonts für ioBroker.vis",
-            "ru": "Красивые google шрифты для ioBroker.vis"
+            "ru": "Красивые google шрифты для ioBroker.vis",
+            "pt": "Boas fontes do google para ioBroker.vis",
+            "nl": "Leuke Google-lettertypen voor ioBroker.vis",
+            "fr": "Belles polices google pour ioBroker.vis",
+            "it": "Bei caratteri google per ioBroker.vis",
+            "es": "Buenas fuentes de google para ioBroker.vis",
+            "pl": "Ładne czcionki Google dla ioBroker.vis",
+            "zh-cn": "ioBroker.vis 的漂亮谷歌字体"
         },
         "platform": "Javascript/Node.js",
         "loglevel": "info",
@@ -24,6 +46,10 @@
         "authors": [
             "bluefox <bluefox@ccu.io>"
         ],
+        "compact": true,
+        "adminUI": {
+            "config": "none"
+        },
         "localLink": "%web_protocol%://%ip%:%web_port%/vis/widgets/google-fonts/index.html",
         "license": "OFL-1.1",
         "dependencies": [

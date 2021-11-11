@@ -2,57 +2,78 @@
  *
  *      ioBroker vis-google-fonts Adapter
  *
- *      Copyright 2015 bluefox<dogafox@gmail.com>
+ *      Copyright 2015-2021 bluefox<dogafox@gmail.com>
  *
  *      OFL License
  *
  */
-/* jshint -W097 */// jshint strict:false
-/*jslint node: true */
-"use strict";
+/* jshint -W097 */
+/* jshint strict: false */
+/* jslint node: true */
+'use strict';
 
-var utils = require('@iobroker/adapter-core'); // Get common adapter utils
-var adapter   = utils.Adapter('vis-google-fonts');
-var writeFile = require(__dirname + '/lib/install.js');
+const utils       = require('@iobroker/adapter-core'); // Get common adapter utils
+const writeFile   = require('./lib/install.js');
+const adapterName = require('./package.json').name.split('.').pop();
 
-adapter.on('ready', function () {
-    checkFiles();
-});
+let adapter;
+
+function startAdapter(options) {
+    options = options || {};
+
+    Object.assign(options, {
+        name: adapterName,
+        ready: () => checkFiles()
+    });
+
+    adapter = new utils.Adapter(options);
+
+    return adapter;
+}
 
 function upload(callback) {
-    adapter.log.info('Upload ' + adapter.name + ' anew, while changes detected...');
-    var file = utils.controllerDir + '/lib/setup.js';
+    adapter.log.info(`Upload ${adapter.name} anew, while changes detected...`);
+    const file = utils.controllerDir + '/lib/setup.js';
 
-    var child = require('child_process').spawn('node', [file, 'upload', adapter.name, 'widgets']);
-    var count = 0;
-    child.stdout.on('data', function (data) {
+    const child = require('child_process').spawn('node', [file, 'upload', adapter.name, 'widgets']);
+    let count = 0;
+    child.stdout.on('data', data => {
         count++;
         adapter.log.debug(data.toString().replace('\n', ''));
-        if ((count % 100) === 0) adapter.log.info(count + ' files uploaded...');
+        if ((count % 100) === 0) {
+            adapter.log.info(count + ' files uploaded...');
+        }
     });
-    child.stderr.on('data', function (data) {
-        adapter.log.error(data.toString().replace('\n', ''));
-    });
-    child.on('exit', function (exitCode) {
+    child.stderr.on('data', data =>
+        adapter.log.error(data.toString().replace('\n', '')));
+
+    child.on('exit', exitCode => {
         adapter.log.info('Uploaded.');
         callback(exitCode);
     });
 }
 
 // Update google-fonts.html
-function checkFiles(callback) {
-    writeFile(adapter, function (changed) {
+function checkFiles() {
+    writeFile(adapter, changed => {
         if (changed) {
-            upload(function () {
+            upload(async () => {
                 adapter.log.info('Changes in widgets/google-fonts.html detected => restart vis');
-                adapter.getForeignObject('system.adapter.vis.0', function (err, obj) {
-                    adapter.setForeignObject('system.adapter.vis.0', obj, function () {
-                        adapter.stop();
-                    });
-                });
+                const obj = await adapter.getForeignObjectAsync('system.adapter.vis.0');
+                await adapter.getForeignObjectAsync('system.adapter.vis.0', obj);
+                adapter.stop();
             });
         } else {
             adapter.stop();
         }
     });
+}
+
+// If started as allInOne mode => return function to create instance
+// @ts-ignore
+if (module.parent) {
+    module.exports = startAdapter;
+} else {
+    // or start the instance directly
+    startAdapter();
 }
