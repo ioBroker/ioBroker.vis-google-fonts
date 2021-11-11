@@ -53,7 +53,7 @@ Following fonts will be included:
 -->
 
 ## Changelog
-### __WORK IN PROGRESS__
+### 1.0.1 (2021-11-11)
 * (bluefox) Support of compact mode added
 
 ### 1.0.0 (2016-04-20)
@@ -129,4 +129,3 @@ Following fonts will be included:
  with Reserved Font Name Sigmar One.
  
  Copyright (c) 2009-2011, Alexey Maslov, Jovanny Lemonad (lemonad@jovanny.ru), with Reserved Font Name 'Stalinist'
- 
