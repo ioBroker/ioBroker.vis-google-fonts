@@ -29,7 +29,7 @@
     "SCADA"
   ],
   "devDependencies": {
-    "@iobroker/testing": "^2.5.2",
+    "@iobroker/testing": "^2.5.3",
     "@alcalzone/release-script": "^3.4.2",
     "@alcalzone/release-script-plugin-iobroker": "^3.4.1",
     "mocha": "^9.1.3",
