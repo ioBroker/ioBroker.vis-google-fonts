@@ -2,7 +2,7 @@
  *
  *      ioBroker vis-google-fonts Adapter
  *
- *      Copyright 2015-2021 bluefox<dogafox@gmail.com>
+ *      Copyright 2015-2022 bluefox<dogafox@gmail.com>
  *
  *      OFL License
  *
@@ -37,6 +37,7 @@ function upload(callback) {
 
     const child = require('child_process').spawn('node', [file, 'upload', adapter.name, 'widgets']);
     let count = 0;
+
     child.stdout.on('data', data => {
         count++;
         adapter.log.debug(data.toString().replace('\n', ''));
@@ -44,6 +45,7 @@ function upload(callback) {
             adapter.log.info(count + ' files uploaded...');
         }
     });
+
     child.stderr.on('data', data =>
         adapter.log.error(data.toString().replace('\n', '')));
 
