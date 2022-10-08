@@ -1,7 +1,7 @@
 {
   "name": "iobroker.vis-google-fonts",
   "description": "Graphical user interface for ioBroker.",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "author": {
     "name": "bluefox",
     "email": "dogafox@gmail.com"

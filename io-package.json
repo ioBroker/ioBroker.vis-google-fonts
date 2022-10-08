@@ -1,9 +1,21 @@
 {
   "common": {
     "name": "vis-google-fonts",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "title": "Nice google fonts for ioBroker.vis",
     "news": {
+      "1.0.4": {
+        "en": "prepare for future js-controller versions",
+        "de": "bereiten für zukünftige js-controller-versionen",
+        "ru": "подготовиться к будущим версиям js-controller",
+        "pt": "preparar para futuras versões js-controller",
+        "nl": "bereid je voor op toekomstige js-controller versie",
+        "fr": "préparer pour les versions futures de js-controller",
+        "it": "prepararsi per future versioni js-controller",
+        "es": "prepararse para futuras versiones js-controller",
+        "pl": "wstępne wersje js-kontrolerowskie",
+        "zh-cn": "为今后控制的小册子编制"
+      },
       "1.0.3": {
         "en": "Support of compact mode added",
         "de": "Unterstützung des Kompaktmodus hinzugefügt",
