@@ -14,12 +14,6 @@
     "type": "git",
     "url": "https://github.com/ioBroker/ioBroker.vis-google-fonts"
   },
-  "licenses": [
-    {
-      "type": "OFL-1.1",
-      "url": "https://github.com/ioBroker/ioBroker.vis-google-fonts/blob/master/LICENSE"
-    }
-  ],
   "keywords": [
     "ioBroker",
     "GUI",

@@ -87,13 +87,18 @@
     },
     "license": "OFL-1.1",
     "dependencies": [
-      "web"
+      "web",
+      {
+        "js-controller": ">=2.0.0"
+      }
     ],
     "restartAdapters": [
       "vis"
     ],
     "singleton": true,
-    "type": "visualization-widgets"
+    "type": "visualization-widgets",
+    "connectionType": "none",
+    "dataSource": "none"
   },
   "native": {
     "always": true
