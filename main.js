@@ -12,9 +12,10 @@
 /* jslint node: true */
 'use strict';
 
-const utils       = require('@iobroker/adapter-core'); // Get common adapter utils
-const writeFile   = require('./lib/install.js');
+const utils = require('@iobroker/adapter-core'); // Get common adapter utils
+const writeFile = require('./lib/install.js');
 const adapterName = require('./package.json').name.split('.').pop();
+const path = require('path');
 
 let adapter;
 
@@ -33,7 +34,7 @@ function startAdapter(options) {
 
 function upload(callback) {
     adapter.log.info(`Upload ${adapter.name} anew, while changes detected...`);
-    const file = utils.controllerDir + '/lib/setup.js';
+    const file = path.join(utils.controllerDir, 'iobroker.js');
 
     const child = require('child_process').spawn('node', [file, 'upload', adapter.name, 'widgets']);
     let count = 0;
