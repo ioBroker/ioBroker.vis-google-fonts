@@ -29,7 +29,7 @@
     "@iobroker/testing": "^4.1.1",
     "@alcalzone/release-script": "^3.7.0",
     "@alcalzone/release-script-plugin-iobroker": "^3.7.0",
-    "mocha": "^10.3.0",
+    "mocha": "^10.4.0",
     "chai": "^4.3.10"
   },
   "bugs": {
