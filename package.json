@@ -30,7 +30,7 @@
     "@alcalzone/release-script": "^3.8.0",
     "@alcalzone/release-script-plugin-iobroker": "^3.7.2",
     "mocha": "^10.7.3",
-    "chai": "^4.3.10"
+    "chai": "^5.1.2"
   },
   "bugs": {
     "url": "https://github.com/ioBroker/ioBroker.vis-google-fonts/issues"
