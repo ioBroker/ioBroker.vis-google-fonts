@@ -23,7 +23,7 @@
     "SCADA"
   ],
   "dependencies": {
-    "@iobroker/adapter-core": "^2.6.8"
+    "@iobroker/adapter-core": "^3.2.2"
   },
   "devDependencies": {
     "@iobroker/testing": "^4.1.3",
