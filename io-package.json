@@ -79,6 +79,7 @@
     },
     "platform": "Javascript/Node.js",
     "loglevel": "info",
+    "tier": 3,
     "icon": "vis-google-fonts.png",
     "enabled": true,
     "mode": "once",
