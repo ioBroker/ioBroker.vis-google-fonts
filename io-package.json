@@ -2,7 +2,6 @@
   "common": {
     "name": "vis-google-fonts",
     "version": "1.0.4",
-    "title": "Nice google fonts for ioBroker.vis",
     "news": {
       "1.0.4": {
         "en": "prepare for future js-controller versions",
