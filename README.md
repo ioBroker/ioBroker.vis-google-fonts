@@ -53,6 +53,10 @@ Following fonts will be included:
 -->
 
 ## Changelog
+
+### **WORK IN PROGRESS**
+- (ioBroker-Bot) Adapter requires js-controller >= 6.0.11 now.
+
 ### 1.0.4 (2022-10-08)
 * (Apollon77) prepare for future js-controller versions
 
