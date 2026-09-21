@@ -68,6 +68,8 @@ Following fonts will be included:
 ### 0.0.1 (2015-11-05)
 * (bluefox) initial checkin
 
+[Older changelogs can be found there](CHANGELOG_OLD.md)
+
 ## License
  Apache 2.0 and SIL Open Font License 1.1
  Copyright bluefox<dogafox@gmail.com>
