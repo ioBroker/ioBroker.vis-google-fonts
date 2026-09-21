@@ -98,7 +98,10 @@
     "adminUI": {
       "config": "none"
     },
-    "license": "OFL-1.1",
+    "licenseInformation": {
+      "type": "free",
+      "license": "OFL-1.1"
+    },
     "dependencies": [
       "web",
       {
