@@ -15,7 +15,7 @@
 const utils = require('@iobroker/adapter-core'); // Get common adapter utils
 const writeFile = require('./lib/install.js');
 const adapterName = require('./package.json').name.split('.').pop();
-const path = require('path');
+const path = require('node:path');
 
 let adapter;
 
@@ -36,7 +36,7 @@ function upload(callback) {
     adapter.log.info(`Upload ${adapter.name} anew, while changes detected...`);
     const file = path.join(utils.controllerDir, 'iobroker.js');
 
-    const child = require('child_process').spawn('node', [file, 'upload', adapter.name, 'widgets']);
+    const child = require('node:child_process').spawn('node', [file, 'upload', adapter.name, 'widgets']);
     let count = 0;
 
     child.stdout.on('data', data => {
