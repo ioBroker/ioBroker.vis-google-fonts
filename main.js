@@ -61,9 +61,23 @@ function checkFiles() {
     writeFile(adapter, changed => {
         if (changed) {
             upload(async () => {
-                adapter.log.info('Changes in widgets/google-fonts.html detected => restart vis');
-                const obj = await adapter.getForeignObjectAsync('system.adapter.vis.0');
-                await adapter.getForeignObjectAsync('system.adapter.vis.0', obj);
+                adapter.log.info('Changes in widgets/google-fonts.html detected => restart vis/vis-2');
+                try {
+                    for (const name of ['vis', 'vis-2']) {
+                        const instances = await adapter.getObjectViewAsync('system', 'instance', {
+                            startkey: `system.adapter.${name}.`,
+                            endkey: `system.adapter.${name}.香`,
+                        });
+                        for (const row of instances.rows) {
+                            if (row.value && row.value.common && row.value.common.enabled) {
+                                // rewrite the object to trigger the restart of the instance
+                                await adapter.extendForeignObjectAsync(row.id, {});
+                            }
+                        }
+                    }
+                } catch (e) {
+                    adapter.log.error(`Cannot restart vis/vis-2: ${e}`);
+                }
                 adapter.stop();
             });
         } else {
